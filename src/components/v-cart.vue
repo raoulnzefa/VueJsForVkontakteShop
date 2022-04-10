@@ -13,6 +13,9 @@
           :cart_item="cart"
       ></v-cart-item>
     </div>
+    <div class="total">
+      <h2>Всего: {{CART.reduce((acc,curr) => acc + (curr.countInCart * curr.count),0)}}₽</h2>
+    </div>
     <div class="nothing" v-if="CART.length === 0">
       <p>В корзине пока пусто....</p>
     </div>
@@ -62,7 +65,14 @@ h3 {
   margin-bottom: 5px;
   cursor: pointer;
 }
-
+.total{
+  margin-top: 40px;
+  padding-top: 50px;
+  font-size: 30px;
+  color: #574f4f;;
+  text-align: right;
+  border-top: 2px solid #e3e3e3;
+}
 .wrapper {
   padding: 100px 0;
   padding-top: 60px;

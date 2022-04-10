@@ -8,7 +8,7 @@
     </div>
     <div class="price-and-count">
       <span>Цена: {{cart_item.countInCart * cart_item.count}}₽ </span>
-      <span>Колличество: <button class="add_or_less" @click="deleteCart(cart_item)">-</button> {{cart_item.countInCart}} <button class="add_or_less">+</button></span>
+      <span>Колличество: <button class="add_or_less" @click="deleteCart(cart_item)">-</button> {{cart_item.countInCart}} <button class="add_or_less" @click="addfunc">+</button></span>
     </div>
     <button class="button-delete" @click ="deleteFully(cart_item.id)">Удалить</button>
   </div>
@@ -33,6 +33,9 @@ export default {
         "ADD_TO_CART",
         "FULLY_REMOVE"
     ]),
+    addfunc(){
+      this.ADD_TO_CART(this.cart_item)
+    },
     deleteCart(card_item){
       this.DELETE_FROM_CART(JSON.parse(JSON.stringify(card_item.id)))
     },

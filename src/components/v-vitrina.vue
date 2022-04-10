@@ -45,7 +45,6 @@ export default {
   methods : {
     dragStartHandler(e) {
       e.preventDefault()
-      console.log("started")
     },
     dragOverHandler(e){
       e.preventDefault()
