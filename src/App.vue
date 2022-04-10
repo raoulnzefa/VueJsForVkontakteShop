@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-header :cart_data="CART"/>
+  <router-view></router-view>
+<!--    <v-catalog-->
+<!--        @addNewCartItem="addCartItem"/>-->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import VCatalog from "@/components/v-catalog";
+import VHeader from "@/components/v-header";
+import {mapGetters} from "vuex";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    VHeader
+  },
+  data() {
+    return {
+      cart: []
+
+    }
+  },
+  computed : {
+    ...mapGetters ([
+      "CART"
+    ])
   }
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Cascadia Mono";
 }
+
 </style>

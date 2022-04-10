@@ -1,0 +1,66 @@
+[
+  {
+    "id" : 1,
+    "name": "Игрушка сеня",
+    "image": "https://nakleikashop.ru/images/detailed/22/CAT-107.png",
+    "count": 110,
+    "inShop": true,
+    "countInCart" : 0
+  },
+  {
+    "id" : 2,
+    "name": "Игрушка Ваня",
+    "image": "https://desano.ru/uploads/catalog/2260/NS-11072-1.jpg",
+    "count": 456,
+    "inShop": true,
+    "countInCart" : 0
+  },
+  {
+    "id" : 3,
+    "name": "Коротконогий друк",
+    "image": "https://desano.ru/uploads/catalog/2268/NS-11080-1.jpg",
+    "count": 346,
+    "inShop": true,
+    "countInCart" : 0
+  },
+  {
+    "id" : 4,
+    "name": "Василек из интернов",
+    "image": "https://desano.ru/uploads/catalog/2264/NS-11076-1.jpg",
+    "count": 158,
+    "inShop" : false,
+    "countInCart" : 0
+  },
+  {
+    "id" : 5,
+    "name": "Малышечка веня",
+    "image": "https://desano.ru/uploads/catalog/2263/NS-11075-1.jpg",
+    "count": 110,
+    "inShop" : true,
+    "countInCart" : 0
+  },
+  {
+    "id" : 6,
+    "name": "Антидипрессант Ваня",
+    "image": "https://desano.ru/uploads/catalog/2269/NS-11081-1.jpg",
+    "count": 456,
+    "inShop" : false,
+    "countInCart" : 0
+  },
+  {
+    "id" : 7,
+    "name": "Интегративнй ванька",
+    "image": "https://desano.ru/uploads/catalog/2259/NS-11071-1.jpg",
+    "count": 346,
+    "inShop" : true,
+    "countInCart" : 0
+  },
+  {
+    "id" : 8,
+    "name": "Дорогой друк",
+    "image": "https://desano.ru/uploads/catalog/1153/NS-10382-1.jpg",
+    "count": 158,
+    "inShop" : true,
+    "countInCart" : 0
+  }
+]
